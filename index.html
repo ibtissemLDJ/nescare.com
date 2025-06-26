@@ -87,7 +87,7 @@
     <!-- نموذج الطلب -->
     <section id="order" class="order-section">
         <h2>اطلب الآن</h2>
-        <form class="order-form">
+        <form class="order-form" id="orderForm">
             <label for="product">اختر المنتج</label>
             <select id="product" name="product" required>
                 <option value="">-- اختر المنتج --</option>
@@ -106,6 +106,22 @@
 
             <button type="submit">اطلب الآن</button>
         </form>
+        
+        <!-- رسالة نجاح الطلب -->
+        <div id="successMessage" class="success-message" style="display: none;">
+            <div class="success-content">
+                <div class="success-icon">✓</div>
+                <h3>تم إرسال طلبك بنجاح!</h3>
+                <p>شكراً لك على طلبك. سنتواصل معك قريباً لتأكيد الطلب وتحديد تفاصيل التوصيل.</p>
+                <p>يمكنك متابعة طلبك عبر:</p>
+                <ul>
+                    <li>البريد الإلكتروني: <a href="mailto:younesghezali2021@gmail.com">younesghezali2021@gmail.com</a></li>
+                    <li>رقم الهاتف: <a href="tel:0795588067">0795588067</a></li>
+                    <li>إنستغرام: <a href="https://instagram.com/nescare46" target="_blank">@nescare46</a></li>
+                </ul>
+                <button onclick="hideSuccessMessage()" class="close-btn">إغلاق</button>
+            </div>
+        </div>
     </section>
 
     <!-- معلومات التواصل -->
@@ -122,5 +138,38 @@
     <footer class="footer">
         <p>جميع الحقوق محفوظة &copy; NesCare 2024</p>
     </footer>
+
+    <script>
+        // معالجة تقديم النموذج
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // التحقق من صحة النموذج
+            const formData = new FormData(this);
+            const product = formData.get('product');
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const phone = formData.get('phone');
+            
+            if (product && name && email && phone) {
+                // إظهار رسالة النجاح
+                showSuccessMessage();
+                
+                // إعادة تعيين النموذج
+                this.reset();
+            }
+        });
+        
+        // إظهار رسالة النجاح
+        function showSuccessMessage() {
+            document.getElementById('successMessage').style.display = 'flex';
+            document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // إخفاء رسالة النجاح
+        function hideSuccessMessage() {
+            document.getElementById('successMessage').style.display = 'none';
+        }
+    </script>
 </body>
 </html> 
