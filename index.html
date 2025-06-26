@@ -19,7 +19,7 @@
         </ul>
     </nav>
 
-    <!-- قسم البطل (Hero Section) مع صور وانيميشن -->
+    <!-- قسم البطل -->
     <section class="hero-section">
         <div class="hero-bg"></div>
         <div class="hero-content fade-in">
@@ -33,7 +33,7 @@
         </div>
     </section>
 
-    <!-- مقدمة الصفحة -->
+    <!-- مقدمة -->
     <section class="about-section" style="margin-top: 1.5rem;">
         <h2>مرحبا بكم في NesCare</h2>
         <p>نحن NesCare، علامة جزائرية متخصصة في تقديم منتجات تجميل طبيعية وفعالة مستوحاة من التراث المغاربي. هدفنا هو العناية بجمالكِ وصحة بشرتكِ بأفضل المكونات الطبيعية.</p>
@@ -52,8 +52,8 @@
             <img src="images/neila_zer9a.jpg" alt="النيلة الزرقاء" onerror="this.onerror=null;this.src='https://izilbeauty.com/cdn/shop/products/FG-160008_1_800x.jpg?v=1679399642';">
             <h3>النيلة الزرقاء المغربية</h3>
             <p>
-                النيلة الزرقاء هي سر جمال المرأة المغاربية منذ قرون. بودرة زرقاء طبيعية مستخرجة من نبات النيلي، تُستخدم لتفتيح وتوحيد لون البشرة، إزالة التصبغات والبقع الداكنة، ومنح البشرة إشراقة ونضارة طبيعية. غنية بمضادات الأكسدة، تساعد على مكافحة علامات التقدم في السن وتهدئة البشرة المتهيجة.<br>
-                <strong>فوائدها:</strong>
+                النيلة الزرقاء هي سر جمال المرأة المغاربية منذ قرون. بودرة زرقاء طبيعية مستخرجة من نبات النيلي، تُستخدم لتفتيح وتوحيد لون البشرة، إزالة التصبغات والبقع الداكنة، ومنح البشرة إشراقة ونضارة طبيعية. غنية بمضادات الأكسدة، تساعد على مكافحة علامات التقدم في السن وتهدئة البشرة المتهيجة.
+                <br><strong>فوائدها:</strong>
                 <ul>
                     <li>تفتيح وتوحيد لون البشرة</li>
                     <li>تقليل التصبغات والبقع الداكنة</li>
@@ -62,15 +62,14 @@
                     <li>مضادة للالتهابات والبكتيريا</li>
                 </ul>
                 <strong>طريقة الاستخدام:</strong> تخلط كمية صغيرة مع ماء الورد أو الزبادي وتوضع كقناع على الوجه أو الجسم لمدة 15-20 دقيقة ثم تغسل.
-                <br>
-                </p>
-           </div>
+            </p>
+        </div>
         <div class="product">
             <img src="images/ziet_tin_chawki.jpg" alt="زيت التين الشوكي" onerror="this.onerror=null;this.src='https://www.herbal-organic.com/image/cache/catalog/Prickly-Pear-Seed-Oil-1-800x800.jpg';">
             <h3>زيت التين الشوكي</h3>
             <p>
-                زيت التين الشوكي يُستخرج من بذور فاكهة الصبار، ويُعد من أغلى الزيوت في العالم بسبب فوائده الجمالية المذهلة. غني بفيتامين E والأحماض الدهنية الأساسية ومضادات الأكسدة.<br>
-                <strong>فوائده للبشرة:</strong>
+                زيت التين الشوكي يُستخرج من بذور فاكهة الصبار، ويُعد من أغلى الزيوت في العالم بسبب فوائده الجمالية المذهلة. غني بفيتامين E والأحماض الدهنية الأساسية ومضادات الأكسدة.
+                <br><strong>فوائده للبشرة:</strong>
                 <ul>
                     <li>ترطيب عميق للبشرة ومنحها نعومة ونضارة</li>
                     <li>مكافحة التجاعيد وعلامات التقدم في السن</li>
@@ -78,50 +77,23 @@
                     <li>تقليل الهالات السوداء وانتفاخ العينين</li>
                     <li>تجديد الخلايا وزيادة مرونة الجلد</li>
                 </ul>
-                <strong>طريقة الاستخدام:</strong> توضع قطرات قليلة على الوجه أو حول العينين وتدلك بلطف قبل النوم.<br>
-               
+                <strong>طريقة الاستخدام:</strong> توضع قطرات قليلة على الوجه أو حول العينين وتدلك بلطف قبل النوم.
             </p>
-           </div>
+        </div>
     </section>
 
-    <!-- نموذج الطلب -->
+    <!-- نموذج الطلب باستخدام Tally -->
     <section id="order" class="order-section">
         <h2>اطلب الآن</h2>
-        <form class="order-form" id="orderForm">
-            <label for="product">اختر المنتج</label>
-            <select id="product" name="product" required>
-                <option value="">-- اختر المنتج --</option>
-                <option value="النيلة الزرقاء المغربية">النيلة الزرقاء المغربية</option>
-                <option value="زيت التين الشوكي">زيت التين الشوكي</option>
-            </select>
-
-            <label for="name">الاسم الكامل</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">البريد الإلكتروني</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="phone">رقم الهاتف</label>
-            <input type="tel" id="phone" name="phone" required>
-
-            <button type="submit">اطلب الآن</button>
-        </form>
-        
-        <!-- رسالة نجاح الطلب -->
-        <div id="successMessage" class="success-message" style="display: none;">
-            <div class="success-content">
-                <div class="success-icon">✓</div>
-                <h3>تم إرسال طلبك بنجاح!</h3>
-                <p>شكراً لك على طلبك. سنتواصل معك قريباً لتأكيد الطلب وتحديد تفاصيل التوصيل.</p>
-                <p>يمكنك متابعة طلبك عبر:</p>
-                <ul>
-                    <li>البريد الإلكتروني: <a href="mailto:younesghezali2021@gmail.com">younesghezali2021@gmail.com</a></li>
-                    <li>رقم الهاتف: <a href="tel:0795588067">0795588067</a></li>
-                    <li>إنستغرام: <a href="https://instagram.com/nescare46" target="_blank">@nescare46</a></li>
-                </ul>
-                <button onclick="hideSuccessMessage()" class="close-btn">إغلاق</button>
-            </div>
-        </div>
+        <iframe 
+            src="https://tally.so/r/wLjP42" 
+            width="100%" 
+            height="600" 
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0" 
+            title="نموذج الطلب">
+        </iframe>
     </section>
 
     <!-- معلومات التواصل -->
@@ -129,7 +101,7 @@
         <h2>معلومات التواصل</h2>
         <ul>
             <li>البريد الإلكتروني: <a href="mailto:younesghezali2021@gmail.com">younesghezali2021@gmail.com</a></li>
-            <li>رقم الهاتف: <a href="tel:99999999">0795588067</a></li>
+            <li>رقم الهاتف: <a href="tel:0795588067">0795588067</a></li>
             <li>إنستغرام: <a href="https://instagram.com/nescare46" target="_blank">@nescare46</a></li>
         </ul>
     </section>
@@ -138,38 +110,5 @@
     <footer class="footer">
         <p>جميع الحقوق محفوظة &copy; NesCare 2024</p>
     </footer>
-
-    <script>
-        // معالجة تقديم النموذج
-        document.getElementById('orderForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // التحقق من صحة النموذج
-            const formData = new FormData(this);
-            const product = formData.get('product');
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const phone = formData.get('phone');
-            
-            if (product && name && email && phone) {
-                // إظهار رسالة النجاح
-                showSuccessMessage();
-                
-                // إعادة تعيين النموذج
-                this.reset();
-            }
-        });
-        
-        // إظهار رسالة النجاح
-        function showSuccessMessage() {
-            document.getElementById('successMessage').style.display = 'flex';
-            document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth' });
-        }
-        
-        // إخفاء رسالة النجاح
-        function hideSuccessMessage() {
-            document.getElementById('successMessage').style.display = 'none';
-        }
-    </script>
 </body>
-</html> 
+</html>
